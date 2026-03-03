@@ -21,10 +21,14 @@ app.use(cookieParser());
 
 
 app.use(cors({
-    origin: ["http://localhost:5173", "http://localhost:5174"],
+    origin: [
+      "http://localhost:5173", 
+      "http://localhost:5174", 
+      "https://balaji-mart-e-commerce-application.vercel.app"
+    ],
     credentials: true,
     methods: ["GET", "POST", "PUT", "DELETE"],
-    allowedHeaders: ["Content-Type", "Authorization", "token"] 
+    allowedHeaders: ["Content-Type", "Authorization", "token"]
 }));
 
 // API ROUTES
